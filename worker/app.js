@@ -263,14 +263,16 @@ export function createWorkerApp(env, options = {}) {
         if (!setupAuthorized(request)) {
           return json({ ok: false, error: 'Нет доступа' }, 403, cors);
         }
-        const result = await telegramCall('getWebhookInfo', {});
+        const info = await telegramCall('getWebhookInfo', {});
+        const me = await telegramCall('getMe', {});
         return json(
           {
-            ok: Boolean(result.data.ok),
-            info: result.data.result ?? null,
-            description: result.data.description ?? null,
+            ok: Boolean(info.data.ok),
+            info: info.data.result ?? null,
+            bot: me.data.result ?? null,
+            description: info.data.description ?? null,
           },
-          result.data.ok ? 200 : 502,
+          info.data.ok ? 200 : 502,
           cors,
         );
       }

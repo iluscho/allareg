@@ -99,6 +99,7 @@ export function createBotCore({ bot, config, logger, scheduleService, requestSer
 
   async function handleStart(ctx) {
     await clearPending(ctx.chat.id);
+    logger.info(`/start от ${ctx.from?.id} (${ctx.from?.first_name ?? ''})`);
     if (!isAdmin(ctx.from?.id)) {
       await ctx.reply(
         [
