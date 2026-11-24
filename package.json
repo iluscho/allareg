@@ -1,0 +1,29 @@
+{
+  "name": "allareg-bot",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Telegram-бот и API для сайта regressional.ru: управление расписанием и заявки на гипнотерапию",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test test/api.test.js test/bot.test.js test/requests.test.js test/schedule.test.js test/worker-api.test.js test/worker-store.test.js",
+    "cf:dev": "wrangler dev",
+    "cf:deploy": "wrangler deploy",
+    "cf:db:init": "wrangler d1 execute allareg --remote --file=worker/schema.sql",
+    "cf:db:init:local": "wrangler d1 execute allareg --local --file=worker/schema.sql",
+    "cf:webhook": "node scripts/set-webhook.mjs",
+    "cf:webhook:delete": "node scripts/set-webhook.mjs --delete"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "grammy": "^1.48.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.168.0"
+  }
+}

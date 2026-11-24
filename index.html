@@ -11,9 +11,46 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#202720;--forest:#27382f;--forest2:#34483b;--gold:#c9a96a;--cream:#f6f2e9;--paper:#fffdf8;--muted:#6f756d;--line:#e3ddcf;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65}a{color:inherit}button,input,textarea{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.19em;font-size:.72rem;font-weight:700;color:var(--gold)}h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.14;margin:0}h1{font-size:clamp(2.8rem,6.6vw,5.9rem);max-width:800px}h2{font-size:clamp(2.15rem,4vw,3.6rem)}h3{font-size:1.55rem}p{margin:.9rem 0}.muted{color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 23px;border:1px solid var(--gold);background:var(--gold);color:#1d241e;text-decoration:none;font-weight:700;letter-spacing:.015em;transition:.2s}.btn:hover{background:#d7bc86;transform:translateY(-2px)}.btn.outline{background:transparent;color:#fff;border-color:#aeb6aa}.btn.outline:hover{background:#ffffff12}.btn.dark{background:var(--forest);border-color:var(--forest);color:#fff}.topbar{position:sticky;top:0;z-index:20;background:#171b18f2;backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid #ffffff18}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-family:var(--serif);font-size:1.12rem;letter-spacing:.04em}.brand small{display:block;font:600 .62rem var(--sans);letter-spacing:.18em;color:var(--gold);text-transform:uppercase}.navlinks{display:flex;align-items:center;gap:24px;font-size:.85rem}.navlinks a{text-decoration:none;color:#e3e5df}.navlinks a:hover{color:var(--gold)}.navlinks .navcta{border:1px solid #8f9a8d;padding:10px 14px}.menu{display:none;background:none;border:1px solid #ffffff50;color:#fff;padding:8px 12px}.hero{background:radial-gradient(ellipse at 78% 20%,#46594a 0%,transparent 42%),linear-gradient(115deg,#171d19,#26372d 65%,#1c2821);color:#fff;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:490px;height:490px;border:1px solid #c9a96a50;border-radius:50%;right:-115px;top:90px;box-shadow:0 0 0 32px #c9a96a08,0 0 0 74px #c9a96a06;pointer-events:none}.hero-inner{position:relative;z-index:1;padding:100px 0 88px;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:50px}.hero .eyebrow{margin-bottom:24px}.hero h1 em{font-style:normal;color:#dfc58f}.hero-lead{font-size:1.13rem;color:#e1e5dc;max-width:600px;margin:27px 0 32px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.hero-note{margin-top:30px;font-size:.82rem;color:#b9c2b7}.hero-art{min-height:430px;position:relative;display:flex;align-items:center;justify-content:center}.orbit{width:min(350px,100%);aspect-ratio:1;border:1px solid #c9a96a8c;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #c9a96a40;border-radius:50%;inset:23px}.orbit:after{inset:49px}.moon{width:142px;height:142px;border-radius:50%;background:linear-gradient(135deg,#e7d6ad,#b48d50 65%,#77603d);box-shadow:0 0 70px #c9a96a30;position:relative}.moon:after{content:"";position:absolute;width:126px;height:126px;top:-12px;left:35px;background:#2c3d31;border-radius:50%}.orbit-label{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);white-space:nowrap;font:italic 1.05rem var(--serif);color:#e6d6b3}.float-label{position:absolute;background:#26372d;border:1px solid #c9a96a66;padding:12px 16px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}.fl1{top:65px;left:-5px}.fl2{right:-12px;bottom:88px}.stats{background:var(--cream);border-bottom:1px solid var(--line)}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:27px 0}.stat{padding:5px 25px;border-right:1px solid #d9d0bf}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat strong{font:1.8rem var(--serif);display:block;color:var(--forest)}.stat span{font-size:.83rem;color:var(--muted)}section{padding:94px 0}.section-head{max-width:720px;margin-bottom:43px}.section-head p{font-size:1.05rem;color:var(--muted)}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.quote-card{background:var(--forest);color:#fff;padding:34px;position:relative}.quote-card:before{content:"“";font:5rem var(--serif);line-height:.8;color:var(--gold)}.quote-card p{font:1.5rem/1.45 var(--serif);margin:14px 0 20px}.quote-card small{color:#d0d8ce}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}.feature{border:1px solid var(--line);padding:24px;background:#fff}.feature .num{color:var(--gold);font:1.5rem var(--serif)}.feature h3{font-size:1.25rem;margin:13px 0 8px}.feature p{color:var(--muted);font-size:.91rem;margin-bottom:0}.sage{background:var(--cream)}.format-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.format{padding:35px;background:var(--paper);border:1px solid var(--line);position:relative}.format.featured{background:var(--forest);color:#fff;border-color:var(--forest)}.format .tag{display:inline-block;border:1px solid var(--gold);padding:5px 9px;font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;color:var(--gold)}.format h3{font-size:2rem;margin:20px 0 10px}.format p{color:var(--muted)}.format.featured p{color:#d7dfd5}.format ul{padding-left:19px;margin:20px 0 28px}.format li{padding:4px 0}.schedule{background:var(--paper)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:25px}.tab{display:inline-flex;align-items:center;padding:12px 18px;border:1px solid var(--line);background:transparent;cursor:pointer;color:var(--ink);text-decoration:none}.schedule-panel{scroll-margin-top:100px}.tab[aria-selected="true"]{background:var(--forest);color:white;border-color:var(--forest)}.schedule-panel{border:1px solid var(--line);background:#fff}.schedule-panel[hidden]{display:none}.schedule-title{padding:23px 26px;background:var(--cream);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:center}.schedule-title h3{font-size:1.5rem}.schedule-title span{font-size:.8rem;color:var(--muted)}.dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(5,auto);grid-auto-flow:column}.date{padding:18px 25px;border-bottom:1px solid #eee8dc;display:flex;align-items:center;gap:17px}.date.col-left{border-right:1px solid #eee8dc}.date .n{font:1.55rem var(--serif);color:var(--gold);min-width:32px}.date strong{display:block;font-size:.95rem}.date small{color:var(--muted)}.note{font-size:.85rem;color:var(--muted);margin-top:18px}.curriculum{background:#202a23;color:#fff}.curriculum .section-head p{color:#c5cec4}.module-list{border-top:1px solid #536054}.module{border-bottom:1px solid #536054}.module summary{list-style:none;cursor:pointer;padding:23px 0;display:grid;grid-template-columns:58px 1fr 30px;align-items:center;gap:16px}.module summary::-webkit-details-marker{display:none}.module summary .number{font:1.8rem var(--serif);color:var(--gold)}.module summary strong{display:block;font:1.45rem var(--serif);font-weight:400}.module summary small{display:block;color:#b6c0b5;margin-top:5px}.module summary .plus{font-size:1.4rem;color:var(--gold);text-align:center;transition:.2s}.module[open] summary .plus{transform:rotate(45deg)}.module-body{padding:0 55px 27px 74px;color:#d6ddd4;max-width:900px}.module-body p{margin:0 0 10px}.module-body ul{margin:8px 0;padding-left:20px;columns:2;column-gap:40px}.module-body li{break-inside:avoid;padding:3px 0}.module-body .practice{color:#e5c98e;font-size:.9rem}.teacher-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.teacher-mark{background:var(--cream);min-height:340px;display:grid;place-items:center;position:relative;overflow:hidden}.teacher-mark .circle{width:225px;height:225px;border:1px solid #c9a96a;border-radius:50%;display:grid;place-items:center;color:var(--forest);font:italic 2rem var(--serif);text-align:center;padding:20px}.teacher-mark:before,.teacher-mark:after{content:"";position:absolute;border:1px solid #c9a96a50;border-radius:50%;width:300px;height:300px}.teacher-mark:after{width:380px;height:380px}.credential{display:flex;gap:14px;margin:20px 0;align-items:flex-start}.check{color:var(--gold);font-size:1.1rem}.credential p{margin:0}.credential strong{display:block}.cert{background:var(--cream)}.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.cert-card{background:var(--paper);padding:27px;border-top:2px solid var(--gold)}.cert-card h3{font-size:1.25rem;margin-bottom:12px}.cert-card p{font-size:.91rem;color:var(--muted)}.cta{background:linear-gradient(120deg,#1b241e,#34483b);color:#fff}.cta-grid{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:center}.cta p{color:#d0d8cf}.contact-card{background:#fff;color:var(--ink);padding:32px}.contact-card h3{font-size:1.7rem;margin-bottom:8px}.phone{display:block;font:2rem var(--serif);color:var(--forest);text-decoration:none;margin:17px 0}.contact-actions{display:grid;gap:10px}.contact-actions .btn{width:100%}.contact-note{font-size:.8rem;color:var(--muted)}.faq-list{border-top:1px solid var(--line)}.faq{border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:600;display:flex;justify-content:space-between;gap:15px}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";color:var(--gold);font-size:1.3rem}.faq[open] summary:after{content:"−"}.faq p{color:var(--muted);max-width:850px;padding:0 20px 18px 0;margin:0}.footer{background:#171b18;color:#d0d7cf;padding:30px 0;font-size:.82rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer a{color:#e2c78d}.disclaimer{font-size:.82rem;color:var(--muted);border-left:2px solid var(--gold);padding-left:16px;margin-top:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65}a{color:inherit}button,input,textarea{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.19em;font-size:.72rem;font-weight:700;color:var(--gold)}h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.14;margin:0}h1{font-size:clamp(2.8rem,6.6vw,5.9rem);max-width:800px}h2{font-size:clamp(2.15rem,4vw,3.6rem)}h3{font-size:1.55rem}p{margin:.9rem 0}.muted{color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 23px;border:1px solid var(--gold);background:var(--gold);color:#1d241e;text-decoration:none;font-weight:700;letter-spacing:.015em;transition:.2s}.btn:hover{background:#d7bc86;transform:translateY(-2px)}.btn.outline{background:transparent;color:#fff;border-color:#aeb6aa}.btn.outline:hover{background:#ffffff12}.btn.dark{background:var(--forest);border-color:var(--forest);color:#fff}.topbar{position:sticky;top:0;z-index:20;background:#171b18f2;backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid #ffffff18}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-family:var(--serif);font-size:1.12rem;letter-spacing:.04em}.brand small{display:block;font:600 .62rem var(--sans);letter-spacing:.18em;color:var(--gold);text-transform:uppercase}.navlinks{display:flex;align-items:center;gap:24px;font-size:.85rem}.navlinks a{text-decoration:none;color:#e3e5df}.navlinks a:hover{color:var(--gold)}.navlinks .navcta{border:1px solid #8f9a8d;padding:10px 14px}.menu{display:none;background:none;border:1px solid #ffffff50;color:#fff;padding:8px 12px}.hero{background:radial-gradient(ellipse at 78% 20%,#46594a 0%,transparent 42%),linear-gradient(115deg,#171d19,#26372d 65%,#1c2821);color:#fff;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:490px;height:490px;border:1px solid #c9a96a50;border-radius:50%;right:-115px;top:90px;box-shadow:0 0 0 32px #c9a96a08,0 0 0 74px #c9a96a06;pointer-events:none}.hero-inner{position:relative;z-index:1;padding:100px 0 88px;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:50px}.hero .eyebrow{margin-bottom:24px}.hero h1 em{font-style:normal;color:#dfc58f}.hero-lead{font-size:1.13rem;color:#e1e5dc;max-width:600px;margin:27px 0 32px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.hero-note{margin-top:30px;font-size:.82rem;color:#b9c2b7}.hero-art{min-height:430px;position:relative;display:flex;align-items:center;justify-content:center}.orbit{width:min(350px,100%);aspect-ratio:1;border:1px solid #c9a96a8c;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #c9a96a40;border-radius:50%;inset:23px}.orbit:after{inset:49px}.moon{width:142px;height:142px;border-radius:50%;background:linear-gradient(135deg,#e7d6ad,#b48d50 65%,#77603d);box-shadow:0 0 70px #c9a96a30;position:relative}.moon:after{content:"";position:absolute;width:126px;height:126px;top:-12px;left:35px;background:#2c3d31;border-radius:50%}.orbit-label{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);white-space:nowrap;font:italic 1.05rem var(--serif);color:#e6d6b3}.float-label{position:absolute;background:#26372d;border:1px solid #c9a96a66;padding:12px 16px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}.fl1{top:65px;left:-5px}.fl2{right:-12px;bottom:88px}.stats{background:var(--cream);border-bottom:1px solid var(--line)}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:27px 0}.stat{padding:5px 25px;border-right:1px solid #d9d0bf}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat strong{font:1.8rem var(--serif);display:block;color:var(--forest)}.stat span{font-size:.83rem;color:var(--muted)}section{padding:94px 0}.section-head{max-width:720px;margin-bottom:43px}.section-head p{font-size:1.05rem;color:var(--muted)}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.quote-card{background:var(--forest);color:#fff;padding:34px;position:relative}.quote-card:before{content:"“";font:5rem var(--serif);line-height:.8;color:var(--gold)}.quote-card p{font:1.5rem/1.45 var(--serif);margin:14px 0 20px}.quote-card small{color:#d0d8ce}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}.feature{border:1px solid var(--line);padding:24px;background:#fff}.feature .num{color:var(--gold);font:1.5rem var(--serif)}.feature h3{font-size:1.25rem;margin:13px 0 8px}.feature p{color:var(--muted);font-size:.91rem;margin-bottom:0}.sage{background:var(--cream)}.format-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.format{padding:35px;background:var(--paper);border:1px solid var(--line);position:relative}.format.featured{background:var(--forest);color:#fff;border-color:var(--forest)}.format .tag{display:inline-block;border:1px solid var(--gold);padding:5px 9px;font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;color:var(--gold)}.format h3{font-size:2rem;margin:20px 0 10px}.format p{color:var(--muted)}.format.featured p{color:#d7dfd5}.format ul{padding-left:19px;margin:20px 0 28px}.format li{padding:4px 0}.schedule{background:var(--paper)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:25px}.tab{display:inline-flex;align-items:center;padding:12px 18px;border:1px solid var(--line);background:transparent;cursor:pointer;color:var(--ink);text-decoration:none}.schedule-panel{scroll-margin-top:100px}.tab[aria-selected="true"]{background:var(--forest);color:white;border-color:var(--forest)}.schedule-panel{border:1px solid var(--line);background:#fff}.schedule-panel[hidden]{display:none}.schedule-title{padding:23px 26px;background:var(--cream);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:center}.schedule-title h3{font-size:1.5rem}.schedule-title span{font-size:.8rem;color:var(--muted)}.dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(var(--rows,5),auto);grid-auto-flow:column}.date{padding:18px 25px;border-bottom:1px solid #eee8dc;display:flex;align-items:center;gap:17px}.date.col-left{border-right:1px solid #eee8dc}.date .n{font:1.55rem var(--serif);color:var(--gold);min-width:32px}.date strong{display:block;font-size:.95rem}.date small{color:var(--muted)}.note{font-size:.85rem;color:var(--muted);margin-top:18px}.curriculum{background:#202a23;color:#fff}.curriculum .section-head p{color:#c5cec4}.module-list{border-top:1px solid #536054}.module{border-bottom:1px solid #536054}.module summary{list-style:none;cursor:pointer;padding:23px 0;display:grid;grid-template-columns:58px 1fr 30px;align-items:center;gap:16px}.module summary::-webkit-details-marker{display:none}.module summary .number{font:1.8rem var(--serif);color:var(--gold)}.module summary strong{display:block;font:1.45rem var(--serif);font-weight:400}.module summary small{display:block;color:#b6c0b5;margin-top:5px}.module summary .plus{font-size:1.4rem;color:var(--gold);text-align:center;transition:.2s}.module[open] summary .plus{transform:rotate(45deg)}.module-body{padding:0 55px 27px 74px;color:#d6ddd4;max-width:900px}.module-body p{margin:0 0 10px}.module-body ul{margin:8px 0;padding-left:20px;columns:2;column-gap:40px}.module-body li{break-inside:avoid;padding:3px 0}.module-body .practice{color:#e5c98e;font-size:.9rem}.teacher-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.teacher-mark{background:var(--cream);min-height:340px;display:grid;place-items:center;position:relative;overflow:hidden}.teacher-mark .circle{width:225px;height:225px;border:1px solid #c9a96a;border-radius:50%;display:grid;place-items:center;color:var(--forest);font:italic 2rem var(--serif);text-align:center;padding:20px}.teacher-mark:before,.teacher-mark:after{content:"";position:absolute;border:1px solid #c9a96a50;border-radius:50%;width:300px;height:300px}.teacher-mark:after{width:380px;height:380px}.credential{display:flex;gap:14px;margin:20px 0;align-items:flex-start}.check{color:var(--gold);font-size:1.1rem}.credential p{margin:0}.credential strong{display:block}.cert{background:var(--cream)}.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.cert-card{background:var(--paper);padding:27px;border-top:2px solid var(--gold)}.cert-card h3{font-size:1.25rem;margin-bottom:12px}.cert-card p{font-size:.91rem;color:var(--muted)}.cta{background:linear-gradient(120deg,#1b241e,#34483b);color:#fff}.cta-grid{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:center}.cta p{color:#d0d8cf}.contact-card{background:#fff;color:var(--ink);padding:32px}.contact-card h3{font-size:1.7rem;margin-bottom:8px}.phone{display:block;font:2rem var(--serif);color:var(--forest);text-decoration:none;margin:17px 0}.contact-actions{display:grid;gap:10px}.contact-actions .btn{width:100%}.contact-note{font-size:.8rem;color:var(--muted)}.faq-list{border-top:1px solid var(--line)}.faq{border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:600;display:flex;justify-content:space-between;gap:15px}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";color:var(--gold);font-size:1.3rem}.faq[open] summary:after{content:"−"}.faq p{color:var(--muted);max-width:850px;padding:0 20px 18px 0;margin:0}.footer{background:#171b18;color:#d0d7cf;padding:30px 0;font-size:.82rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer a{color:#e2c78d}.disclaimer{font-size:.82rem;color:var(--muted);border-left:2px solid var(--gold);padding-left:16px;margin-top:24px}
 @media(max-width:850px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#171b18;padding:20px 24px 26px;flex-direction:column;align-items:stretch;gap:17px;border-bottom:1px solid #ffffff22}.navlinks.open{display:flex}.menu{display:block}.hero-inner{grid-template-columns:1fr;padding:75px 0 65px}.hero-art{min-height:300px}.orbit{width:270px}.float-label.fl1{left:8%}.float-label.fl2{right:5%}.stats-grid{grid-template-columns:repeat(2,1fr);gap:18px}.stat{padding:5px 14px;border-right:0;border-left:1px solid #d9d0bf}.stat:first-child{padding-left:14px}.about-grid,.teacher-grid,.cta-grid{grid-template-columns:1fr;gap:32px}.feature-grid,.cert-grid{grid-template-columns:1fr 1fr}.module-body ul{columns:1}.module-body{padding-left:30px}.cta-grid{gap:35px}}
 @media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}section{padding:66px 0}.hero-inner{padding-top:58px}.hero-art{min-height:265px}.orbit{width:235px}.moon{width:105px;height:105px}.moon:after{width:95px;height:95px;left:27px}.float-label{font-size:.65rem;padding:9px 10px}.fl1{top:32px!important}.fl2{bottom:42px!important}.stats-grid{padding:20px 0}.stat strong{font-size:1.5rem}.stat span{font-size:.75rem}.feature-grid,.format-grid,.cert-grid{grid-template-columns:1fr}.format{padding:26px}.dates{grid-template-columns:1fr;grid-template-rows:none;grid-auto-flow:row}.date.col-left{border-right:0}.schedule-title{align-items:flex-start;flex-direction:column}.module summary{grid-template-columns:39px 1fr 24px;gap:10px}.module summary strong{font-size:1.2rem}.module summary .number{font-size:1.4rem}.module-body{padding:0 0 24px 49px}.phone{font-size:1.65rem}.footer-inner{align-items:flex-start;flex-direction:column}.hero-actions .btn{width:100%}}
+/* ── Заявка на гипнотерапию ─────────────────────────────────────────── */
+.apply{background:linear-gradient(120deg,#1b241e,#34483b);color:#fff}
+.apply-grid{display:grid;grid-template-columns:1fr .95fr;gap:60px;align-items:start}
+.apply h2{color:#fff}
+.apply p{color:#d3dbd1}
+.apply .eyebrow{color:var(--gold)}
+.apply-list{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.apply-list li{display:flex;gap:11px;font-size:.95rem;color:#dfe5dc}
+.apply-list .mark{color:var(--gold);flex:none}
+.apply-note{font-size:.8rem;color:#aeb9ac;border-left:2px solid var(--gold);padding-left:14px;margin-top:26px}
+.form-card{background:#fff;color:var(--ink);padding:32px;border-top:3px solid var(--gold);box-shadow:0 22px 60px #00000024}
+.form-card h3{font-size:1.7rem;margin-bottom:6px}
+.form-card p{color:var(--muted)}
+.form-lead{font-size:.85rem;color:var(--muted);margin:0 0 20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:grid;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#6c7268}
+.field input,.field select,.field textarea{width:100%;padding:11px 13px;border:1px solid var(--line);background:#fbf9f3;color:var(--ink);border-radius:0;font:inherit;transition:border-color .15s,background .15s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);background:#fff}
+.field textarea{min-height:92px;resize:vertical}
+.field.error input,.field.error textarea,.field.error select{border-color:#a23b2a;background:#fdf1ee}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.76rem;line-height:1.5;color:var(--muted);margin:16px 0 0;cursor:pointer}
+.consent input{flex:none;width:16px;height:16px;margin-top:2px;accent-color:var(--forest)}
+.form-card .btn{width:100%;margin-top:16px}
+.form-status{margin:12px 0 0;font-size:.86rem;min-height:1.1em}
+.form-status.err{color:#a23b2a}
+.form-status.ok{color:#2c6b45}
+.form-note{font-size:.74rem;color:var(--muted);margin:10px 0 0}
+.form-note a{color:var(--forest);font-weight:600}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.form-success{text-align:center;padding:24px 6px}
+.form-success .check{width:56px;height:56px;border-radius:50%;background:var(--cream);border:1px solid var(--gold);color:var(--forest);display:grid;place-items:center;margin:0 auto 16px;font-size:1.5rem}
+.form-success h3{font-size:1.55rem;margin-bottom:8px}
+.form-success p{color:var(--muted);font-size:.92rem}
+@media(max-width:900px){.apply-grid{grid-template-columns:1fr;gap:34px}.form-card{padding:26px}}
+@media(max-width:560px){.form-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -22,7 +59,7 @@
     <a class="brand" href="#top" style="text-decoration:none">ИРГТ <small>Обучающая программа · 2026–2027</small></a>
     <button class="menu" id="menuBtn" aria-expanded="false" aria-label="Открыть меню">Меню ☰</button>
     <nav class="navlinks" id="navlinks">
-      <a href="#about">О программе</a><a href="#schedule">Расписание</a><a href="#modules">Модули</a><a href="#teacher">Преподаватель</a><a class="navcta" href="#contact">Записаться</a>
+      <a href="#about">О программе</a><a href="#schedule">Расписание</a><a href="#modules">Модули</a><a href="#teacher">Преподаватель</a><a href="#contact">Гипнотерапия</a><a class="navcta" href="#contact">Записаться</a>
     </nav>
   </div>
 </header>
@@ -127,9 +164,79 @@
     </div>
   </div>
 </section>
+<section class="apply" id="contact">
+  <div class="wrap apply-grid">
+    <div>
+      <div class="eyebrow">Индивидуальная работа</div>
+      <h2 style="margin-top:15px">Заявка на гипнотерапию</h2>
+      <p>Личная сессия — это разговор о вашем запросе и работа с ним в трансовом состоянии. Оставьте контакты: я свяжусь с вами лично, чтобы обсудить детали, формат и удобное время.</p>
+      <ul class="apply-list">
+        <li><span class="mark">✦</span><span>Индивидуальная встреча онлайн или очно в Оренбурге</span></li>
+        <li><span class="mark">✦</span><span>Конфиденциально: заявку видит только организатор</span></li>
+        <li><span class="mark">✦</span><span>Ответ в течение дня, без автоматических рассылок</span></li>
+      </ul>
+      <p class="apply-note">Гипнотерапия не заменяет медицинскую помощь. Если ситуация требует срочного вмешательства, обратитесь к врачу или в экстренную службу.</p>
+    </div>
+    <div class="form-card">
+      <h3>Оставить заявку</h3>
+      <p class="form-lead">Поля со звёздочкой обязательны. Номер телефона и переписка не публикуются.</p>
+      <form id="applyForm" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="applyName">Имя *</label>
+            <input id="applyName" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Как к вам обращаться" required>
+          </div>
+          <div class="field">
+            <label for="applyContact">Телефон или Telegram *</label>
+            <input id="applyContact" name="contact" type="text" autocomplete="tel" maxlength="120" placeholder="+7 … или @nickname" required>
+          </div>
+          <div class="field full">
+            <label for="applyTopic">Тема обращения *</label>
+            <select id="applyTopic" name="topic" required>
+              <option value="therapy" selected>Гипнотерапия · сессия</option>
+              <option value="course">Обучение на программе</option>
+              <option value="other">Другой вопрос</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="applyTime">Удобное время для связи</label>
+            <input id="applyTime" name="preferredTime" type="text" maxlength="80" placeholder="Например: будни после 18:00">
+          </div>
+          <div class="field full">
+            <label for="applyMessage">Коротко о запросе</label>
+            <textarea id="applyMessage" name="message" maxlength="1500" rows="4" placeholder="Что вас беспокоит и чего хотелось бы достичь — в свободной форме"></textarea>
+          </div>
+        </div>
+        <div class="hp" aria-hidden="true">
+          <label for="applyWebsite">Не заполняйте это поле</label>
+          <input id="applyWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <label class="consent" for="applyConsent">
+          <input id="applyConsent" name="consent" type="checkbox" required>
+          <span>Согласен(-на) на обработку персональных данных для ответа на заявку. Данные не передаются третьим лицам.</span>
+        </label>
+        <button class="btn" type="submit" id="applySubmit">Отправить заявку <span>↗</span></button>
+        <p class="form-status" id="applyStatus" role="status" aria-live="polite"></p>
+        <p class="form-note" id="applyFallback" hidden></p>
+      </form>
+      <div class="form-success" id="applySuccess" hidden>
+        <div class="check">✓</div>
+        <h3>Заявка отправлена</h3>
+        <p>Спасибо! Я свяжусь с вами по указанному контакту в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+<script src="./config.js"></script>
 <script>
 (function () {
+  /* Настройки сайта лежат в config.js: адрес API и ссылка на Telegram. */
+  const cfg = window.SITE_CONFIG || {};
+  const apiBase = String(cfg.apiBase || '').replace(/\/+$/, '');
+  const apiUrl = (path) => `${apiBase}${path}`;
+
+  /* ── Мобильное меню ─────────────────────────────────────────────────── */
   const menuBtn = document.getElementById('menuBtn');
   const navlinks = document.getElementById('navlinks');
   if (menuBtn && navlinks) {
@@ -137,48 +244,194 @@
       const open = navlinks.classList.toggle('open');
       menuBtn.setAttribute('aria-expanded', String(open));
     });
+    navlinks.addEventListener('click', (event) => {
+      if (event.target.closest('a')) {
+        navlinks.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
   }
 
+  /* ── Расписание ─────────────────────────────────────────────────────── */
   function renderDates(containerId, items) {
     const container = document.getElementById(containerId);
-    if (!container || !Array.isArray(items)) return;
+    if (!container) return;
+
+    const list = Array.isArray(items) ? items : [];
+    const half = Math.max(1, Math.ceil(list.length / 2));
+    container.replaceChildren();
+    container.style.setProperty('--rows', String(half));
+
+    if (!list.length) {
+      const empty = document.createElement('p');
+      empty.className = 'note';
+      empty.style.padding = '18px 25px';
+      empty.textContent = 'Даты уточняются.';
+      container.append(empty);
+      return;
+    }
 
     const fragment = document.createDocumentFragment();
-    items.forEach((item, idx) => {
+    list.forEach((item, idx) => {
       const row = document.createElement('div');
-      row.className = idx < 5 ? 'date col-left' : 'date';
+      row.className = idx < half ? 'date col-left' : 'date';
 
       const num = document.createElement('span');
       num.className = 'n';
-      num.textContent = item.num ?? String(idx + 1).padStart(2, '0');
+      num.textContent = item.num || String(idx + 1).padStart(2, '0');
 
       const info = document.createElement('div');
       const strong = document.createElement('strong');
-      strong.textContent = item.dates ?? '';
+      strong.textContent = item.dates || '';
       const small = document.createElement('small');
-      small.textContent = item.title ?? '';
+      small.textContent = item.title || '';
 
       info.append(strong, small);
       row.append(num, info);
       fragment.append(row);
     });
 
-    container.replaceChildren(fragment);
+    container.append(fragment);
   }
 
-  async function loadSchedule() {
+  function isValidSchedule(data) {
+    return Boolean(data) && Array.isArray(data.onsite) && Array.isArray(data.online);
+  }
+
+  async function fetchJson(url, timeoutMs) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs || 6000);
     try {
-      const res = await fetch(`./schedule.json?t=${Date.now()}`, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
-      renderDates('dates-onsite', data.onsite);
-      renderDates('dates-online', data.online);
-    } catch (err) {
-      console.error('Не удалось загрузить schedule.json:', err);
+      const response = await fetch(url, { cache: 'no-store', signal: controller.signal });
+      if (!response.ok) return null;
+      return await response.json();
+    } catch (error) {
+      return null;
+    } finally {
+      clearTimeout(timer);
     }
   }
 
+  async function loadSchedule() {
+    // 1) Живые данные из API (если сайт открыт с сервера бота — тот же домен).
+    // 2) Резерв — статический schedule.json рядом с index.html.
+    const sources = [
+      apiBase ? `${apiBase}/api/schedule` : './api/schedule',
+      `./schedule.json?t=${Date.now()}`,
+    ];
+
+    for (const url of sources) {
+      const data = await fetchJson(url);
+      if (isValidSchedule(data)) {
+        renderDates('dates-onsite', data.onsite);
+        renderDates('dates-online', data.online);
+        return;
+      }
+    }
+    console.error('Не удалось загрузить расписание: ни API, ни schedule.json не ответили.');
+  }
+
   loadSchedule();
+
+  /* ── Заявка на гипнотерапию ─────────────────────────────────────────── */
+  const form = document.getElementById('applyForm');
+  const status = document.getElementById('applyStatus');
+  const success = document.getElementById('applySuccess');
+  const submitBtn = document.getElementById('applySubmit');
+  const fallback = document.getElementById('applyFallback');
+
+  if (fallback && cfg.telegram) {
+    fallback.hidden = false;
+    const link = document.createElement('a');
+    link.href = cfg.telegram;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = 'Написать в Telegram';
+    fallback.append('Форма не работает? ', link);
+  }
+
+  function setStatus(text, kind) {
+    if (!status) return;
+    status.textContent = text;
+    status.className = 'form-status' + (kind ? ` ${kind}` : '');
+  }
+
+  function markError(name) {
+    const input = form ? form.querySelector(`[name="${name}"]`) : null;
+    const field = input ? input.closest('.field') : null;
+    if (field) field.classList.add('error');
+  }
+
+  function clearErrors() {
+    if (!form) return;
+    form.querySelectorAll('.field.error').forEach((element) => element.classList.remove('error'));
+  }
+
+  function fail(name, message) {
+    markError(name);
+    setStatus(message, 'err');
+    const input = form ? form.querySelector(`[name="${name}"]`) : null;
+    if (input) input.focus();
+  }
+
+  if (form) {
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!submitBtn || submitBtn.disabled) return;
+
+      clearErrors();
+      setStatus('', '');
+
+      const data = new FormData(form);
+      const payload = {
+        name: String(data.get('name') || '').trim(),
+        contact: String(data.get('contact') || '').trim(),
+        topic: String(data.get('topic') || 'other'),
+        preferredTime: String(data.get('preferredTime') || '').trim(),
+        message: String(data.get('message') || '').trim(),
+        consent: data.get('consent') === 'on',
+        website: String(data.get('website') || ''),
+      };
+
+      if (payload.name.length < 2) return fail('name', 'Укажите имя — минимум 2 символа.');
+      if (payload.contact.length < 3) return fail('contact', 'Оставьте телефон или ник в Telegram.');
+      if (!payload.consent) return fail('consent', 'Нужно согласие на обработку персональных данных.');
+
+      const initialHtml = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.classList.add('sending');
+      submitBtn.textContent = 'Отправляем…';
+
+      try {
+        const response = await fetch(apiUrl('/api/requests'), {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (response.ok && result && result.ok) {
+          form.hidden = true;
+          if (success) success.hidden = false;
+          return;
+        }
+
+        if (result && result.fields) {
+          Object.keys(result.fields).forEach(markError);
+          setStatus(Object.values(result.fields).join(' '), 'err');
+          return;
+        }
+
+        setStatus((result && result.error) || 'Не удалось отправить заявку. Попробуйте ещё раз.', 'err');
+      } catch (error) {
+        setStatus('Нет связи с сервером. Проверьте интернет и попробуйте ещё раз.', 'err');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('sending');
+        submitBtn.innerHTML = initialHtml;
+      }
+    });
+  }
 })();
 </script>
 </body>

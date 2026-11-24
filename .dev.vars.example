@@ -1,0 +1,5 @@
+# Локальные секреты для `wrangler dev`.
+# Скопируйте в .dev.vars (этот файл в git не попадает).
+BOT_TOKEN=
+ADMIN_IDS=
+WEBHOOK_SECRET=

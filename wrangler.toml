@@ -1,0 +1,23 @@
+# Конфигурация Cloudflare Workers (бесплатный тариф).
+# Секреты задаются отдельно:
+#   npx wrangler secret put BOT_TOKEN
+#   npx wrangler secret put ADMIN_IDS
+#   npx wrangler secret put WEBHOOK_SECRET
+
+name = "allareg-bot"
+main = "worker/index.js"
+compatibility_date = "2025-06-01"
+
+[observability]
+enabled = true
+
+[vars]
+SITE_URL = "https://regressional.ru"
+TZ_NAME = "Europe/Moscow"
+ALLOWED_ORIGINS = "*"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "allareg"
+# Замените на id из вывода: npx wrangler d1 create allareg
+database_id = "29047c71-e7f9-4c67-9eda-d69c9f911c65"

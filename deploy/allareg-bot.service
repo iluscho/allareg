@@ -1,0 +1,23 @@
+[Unit]
+Description=allareg bot and API (regressional.ru)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Пользователь и каталог замените на свои.
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/allareg
+EnvironmentFile=/opt/allareg/.env
+ExecStart=/usr/bin/node /opt/allareg/src/index.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/opt/allareg/data
+
+[Install]
+WantedBy=multi-user.target

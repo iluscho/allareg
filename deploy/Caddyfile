@@ -1,0 +1,7 @@
+# Caddy сам получает сертификат Let's Encrypt.
+# Замените домен на свой и укажите в .env: TRUST_PROXY=1
+
+bot.regressional.ru {
+	encode gzip
+	reverse_proxy 127.0.0.1:8080
+}
