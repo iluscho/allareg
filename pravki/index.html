@@ -64,6 +64,8 @@
 .choice input{width:16px;height:16px;accent-color:var(--forest)}
 @media(max-width:900px){.price-grid{grid-template-columns:1fr}}
 
+.teacher-photo{margin:0;overflow:hidden;border:1px solid var(--line);background:var(--cream)}
+.teacher-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 22%}
 .field .choice{text-transform:none;letter-spacing:0;font-weight:600;font-size:.9rem;color:var(--ink)}
 </style>
 </head>
@@ -123,7 +125,7 @@
 </section>
 <section id="teacher">
   <div class="wrap teacher-grid">
-    <div class="teacher-mark" aria-label="Фотография преподавателя"><div class="circle">Фото<br>преподавателя</div></div>
+    <figure class="teacher-photo"><img src="./img/teacher-900.jpg" srcset="./img/teacher-480.jpg 480w, ./img/teacher-900.jpg 900w" sizes="(max-width: 850px) 90vw, 480px" width="900" height="1200" alt="Алла Владимировна Кинякина" decoding="async"></figure>
     <div><div class="eyebrow">Преподаватель программы</div><h2 style="margin-top:15px">Алла Владимировна Кинякина</h2><p class="muted">Президент Ассоциации специалистов и исследователей в области глубинной памяти и регрессий (АСИОГПР), психолог, регрессолог, преподаватель.</p><p>Сертифицированный специалист в области телесно-ориентированной, эмоционально-образной, кататимно-имагинативной психотерапии, эриксоновского гипноза.</p><p>Обучалась у зарубежных и российских преподавателей: Сьюзан Вайсхарт, Долорес Кэннон, Рифы Ходжсон, П. С. Гынгазова.</p><a class="btn dark" href="#contact">Узнать об участии ↗</a></div>
   </div>
 </section>
